@@ -1,7 +1,7 @@
-package ru.netology;
+package page;
 
 import com.codeborne.selenide.SelenideElement;
-import ru.netology.DataHelper;
+import data.DataHelper;
 
 import static com.codeborne.selenide.Selenide.$;
 

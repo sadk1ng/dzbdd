@@ -1,8 +1,11 @@
-package ru.netology;
+package test;
 
 import com.codeborne.selenide.Selenide;
+import data.DataHelper;
 import lombok.val;
 import org.junit.jupiter.api.Test;
+import page.DashboardPage;
+import page.LoginPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
