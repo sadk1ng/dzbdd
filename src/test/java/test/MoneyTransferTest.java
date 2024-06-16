@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MoneyTransferTest {
     private final int amountInvalid = 11000;
+    private int amountValid = 500;
 
     private DashboardPage shouldOpenDashboardPage() {
         open("http://localhost:9999");
@@ -28,7 +29,6 @@ public class MoneyTransferTest {
     void shouldTransferMoneyFromCard2toCard1() {
         DashboardPage dashboardPage = shouldOpenDashboardPage();
         dashboardPage.dashboardPageVisible();
-        int amountValid = 500;
         int expected1 = dashboardPage.getBalanceCard1() + amountValid;
         int expected2 = dashboardPage.getBalanceCard2() - amountValid;
         val moneyTransfer = dashboardPage.card1();
